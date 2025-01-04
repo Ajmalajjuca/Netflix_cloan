@@ -1,0 +1,104 @@
+.nav {
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7)10%, transparent);
+    z-index: 1;
+    transition: background-color 0.03s ease;
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav_left img {
+    width: 90px;
+}
+
+.nav_left ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav_left ul li {
+    cursor: pointer;
+}
+
+.nav_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav_right .icon {
+    width: 20px;
+    cursor: pointer;
+
+}
+
+.nav_right .profile {
+    border-radius: 40x;
+    width: 35px;
+}
+
+.nav_profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav .dropdoun {
+    position: absolute;
+    top: 100;
+    right: 0;
+    width: max-content;
+    background: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+
+.nav .dropdoun p {
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.nav_profile:hover .dropdoun {
+    display: block;
+}
+
+.nav-dark {
+    background: #141414;
+}
+
+@media (max-width:800px) {
+    .nav{
+        padding: 20px 4%;
+    }
+    .nav_left ul{
+        display: none;
+    }
+    .nav img{
+        height: 25px;
+    }
+}
+@media (max-width:500px) {
+    .nav img{
+        height: 20px;
+    }
+    .nav_right{
+        gap: 10px;
+    }
+}
